@@ -1,20 +1,26 @@
-using System;
 using UnityEngine;
+using System;
 
 public class AudioPlayer : MonoBehaviour
 {
-    [Header("Pick Up")]
-    [SerializeField] AudioClip pickUpClip;
-    //Range sayesinde inspectorda sliderla sesi ayarlayabiliyoruz
-    [SerializeField] [Range(0f, 1f)]float pickUpVolume = 1f;
-    
-    [Header("Drop")]
-    [SerializeField] AudioClip dropClip;
-    [SerializeField] [Range(0f, 1f)]float dropVolume = 1f;
-    
+    public Sound[] sounds;
     private void Awake()
     {
         ManageSingleton();
+        foreach (Sound sound in sounds)
+        {
+            sound.source = gameObject.AddComponent<AudioSource>();
+            sound.source.clip = sound.clip;
+            sound.source.volume = sound.volume;
+            sound.source.pitch = sound.pitch;
+            sound.source.loop = sound.loop;
+            sound.source.outputAudioMixerGroup = sound.audioMixerGroup;
+        }
+    }
+
+    private void Start()
+    {
+        Play("Music");
     }
 
     private void ManageSingleton()
@@ -31,22 +37,11 @@ public class AudioPlayer : MonoBehaviour
         }
     }
 
-    //oyuncu tangram parçasını aldığında oynayacak olan ses
-    public void PlayPickUpClip()
+    public void Play(string name)
     {
-        if (pickUpClip != null)
-        {
-            //sesi sahnede bi yere yerleştiricez, düzgün olması için kameranın positionına yerleştiriyoruz
-            AudioSource.PlayClipAtPoint(pickUpClip, Camera.main.transform.position, pickUpVolume);
-        }
+        Sound s = Array.Find(sounds, sound => sound.name == name);
+        s.source.volume = 1f;
+        s.source.Play();
     }
     
-    //oyuncu tangram parçasını bir yere koyduğunda oynayacak olan ses
-    public void PlayDropClip()
-    {
-        if (dropClip != null)
-        {
-            AudioSource.PlayClipAtPoint(dropClip, Camera.main.transform.position, dropVolume);
-        }
-    }
 }

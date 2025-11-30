@@ -47,5 +47,8 @@ TagManager:
   - name: Background
     uniqueID: 4131518857
     locked: 0
+  - name: Canvas
+    uniqueID: 1731169395
+    locked: 0
   m_RenderingLayers:
   - Default

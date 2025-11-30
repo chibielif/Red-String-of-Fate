@@ -90,11 +90,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Scene27.unity
     guid: 23c515c742dae76419f6720fe32900ee
   - enabled: 1
-    path: Assets/Scenes/Scene81.unity
+    path: Assets/Scenes/Scene28.unity
     guid: 3c2660f8b098177498e2d489b83a812e
   - enabled: 1
-    path: Assets/Scenes/Tangram.unity
-    guid: c12ca7b9893acfc439b3d5a0a9ff792a
+    path: Assets/Scenes/Settings.unity
+    guid: 6b08661654149bc4f9465f88ba8c0143
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

@@ -5,19 +5,18 @@ using UnityEngine;
 
 public class LoveRefill : MonoBehaviour
 {
-    private GameSession _gameSession;
+    private GameManager _gameManager;
 
     private void Awake()
     {
-        _gameSession = FindFirstObjectByType<GameSession>();
+        _gameManager = FindFirstObjectByType<GameManager>();
     }
     
-
-
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (!other.CompareTag("Player") || _gameSession.GetCurrentSceneName() != "Scene6") return;
-        _gameSession.LoadTangram();
+        if (!other.CompareTag("Player")) return;
+        _gameManager.LoadTangram();
     }
     
 }

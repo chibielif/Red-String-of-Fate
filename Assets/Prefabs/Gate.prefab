@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1334385816993704310}
   - component: {fileID: 2190645399070384189}
-  - component: {fileID: 755289278952034702}
+  - component: {fileID: 2807526911703568}
   m_Layer: 0
   m_Name: Gate
   m_TagString: Untagged
@@ -79,7 +79,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 5.0719466, y: 1.6019397}
   m_EdgeRadius: 0
---- !u!114 &755289278952034702
+--- !u!114 &2807526911703568
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -88,8 +88,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 3999720485659691203}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa40e2f6505ca634a93d945f01e4b8e9, type: 3}
+  m_Script: {fileID: 11500000, guid: 1f016f1c6beeab74793f35f34e70ecb3, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ExitScene
-  nextScene: Scene2
-  levelLoadDelay: 0
+  m_EditorClassIdentifier: Assembly-CSharp::GoThroughGate
+  nextScene: 
+  levelLoadDelay: 1

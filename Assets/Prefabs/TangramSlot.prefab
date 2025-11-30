@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 461207308065161675}
   - component: {fileID: 904179016795589474}
   - component: {fileID: 5147321970232287408}
+  - component: {fileID: 615033076660730734}
   m_Layer: 5
   m_Name: TangramSlot
   m_TagString: Untagged
@@ -35,7 +36,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 344, y: 114}
-  m_SizeDelta: {x: 276, y: 273}
+  m_SizeDelta: {x: 151, y: 408}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &904179016795589474
 CanvasRenderer:
@@ -65,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 195981088161307766, guid: 3046ad0fe7dec22449b3857175c87b49, type: 3}
+  m_Sprite: {fileID: -4076793805236398369, guid: 4892098b2bc777f4d958d76730a8cfab, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -75,3 +76,15 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &615033076660730734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8066179510168118054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 271f1e609f1164842a20a08a2194cab2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TangramPosition

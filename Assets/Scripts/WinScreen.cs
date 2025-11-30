@@ -7,7 +7,7 @@ public class WinScreen : MonoBehaviour
         if (other.tag == "Player")
         {
             //display win screen
-            FindFirstObjectByType<GameSession>().WinGame();
+            FindFirstObjectByType<GameManager>().WinGame();
         }
     }
 

@@ -33,5 +33,12 @@ public class MenuManager : MonoBehaviour
         _storyScreen.gameObject.SetActive(false);
         _tutorialScreen.gameObject.SetActive(true);
     }
+ 
+    public void LoadSettings()
+    {
+        SceneManager.LoadScene("Settings");
+    }
+    
+    
     
 }

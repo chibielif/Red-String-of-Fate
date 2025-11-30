@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3481195840243715360}
   - component: {fileID: 4750016308761258407}
   - component: {fileID: 4903838877436774550}
-  - component: {fileID: 3403264145709026596}
+  - component: {fileID: 6115748941630719418}
   - component: {fileID: 4220460370080900004}
   - component: {fileID: 153114701106127368}
   m_Layer: 0
@@ -140,7 +140,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.3824043, y: 1.2898586}
   m_EdgeRadius: 0
---- !u!114 &3403264145709026596
+--- !u!114 &6115748941630719418
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
