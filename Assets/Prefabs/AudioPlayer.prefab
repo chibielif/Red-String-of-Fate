@@ -47,19 +47,22 @@ MonoBehaviour:
   sounds:
   - name: Pick Up
     clip: {fileID: 8300000, guid: 0e1e7c8392dadbe4cb36de8769c5e99c, type: 3}
+    audioMixerGroup: {fileID: 24300002, guid: b08ce77a6e8cace4fbae994a144f048a, type: 2}
     volume: 1
     pitch: 1
     source: {fileID: 0}
     loop: 0
   - name: Drop
     clip: {fileID: 8300000, guid: 5923900a81d53504f9e6b566fab3ac56, type: 3}
+    audioMixerGroup: {fileID: 24300002, guid: b08ce77a6e8cace4fbae994a144f048a, type: 2}
     volume: 1
     pitch: 1
     source: {fileID: 0}
     loop: 0
   - name: Music
     clip: {fileID: 8300000, guid: 0d8e0a040cb6b714f84f828a8c4f1d0c, type: 3}
+    audioMixerGroup: {fileID: 24300002, guid: 4a73dabed1073e74eaee5bcb24b56936, type: 2}
     volume: 1
     pitch: 1
     source: {fileID: 0}
-    loop: 0
+    loop: 1

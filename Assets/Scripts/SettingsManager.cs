@@ -1,11 +1,54 @@
+using System;
+using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class SettingsManager : MonoBehaviour
 {
     public AudioMixer musicAudioMixer;
-    public AudioMixer SFXAudioMixer;
+    public AudioMixer sfxAudioMixer;
+    
+    public TMP_Dropdown resolutionDropdown;
+    
+    
+    Resolution[] resolutions;
+
+    private void Start()
+    {
+        resolutions = Screen.resolutions;
+        
+        resolutionDropdown.ClearOptions();
+        
+        List<string> options = new List<string>();
+        int currentResolutionIndex = 0;
+
+        for (int i = 0; i < resolutions.Length; i++)
+        {
+            string option = resolutions[i].width + " x " + resolutions[i].height;
+            options.Add(option);
+            
+            if (resolutions[i].width == Screen.width && 
+                resolutions[i].height == Screen.height)
+            {
+                currentResolutionIndex = i;
+            }
+        }
+        
+        resolutionDropdown.AddOptions(options);
+        resolutionDropdown.value = currentResolutionIndex;
+        resolutionDropdown.RefreshShownValue();
+
+    }
+
+    public void SetResolution(int resolutionIndex)
+    {
+        Resolution resolution = resolutions[resolutionIndex];
+        Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
+    }
+
     public void LoadMainMenu()
     {
         SceneManager.LoadScene("Main Menu");
@@ -14,12 +57,13 @@ public class SettingsManager : MonoBehaviour
     public void SetMusicVolume(float volume)
     {
         musicAudioMixer.SetFloat("MusicVolume", volume);
-    } 
-    
-    public void SetSFXVolume(float volume)
-    {
-        SFXAudioMixer.SetFloat("SFXVolume", volume);
     }
+    
+    public void SetSfxVolume(float volume)
+    {
+        sfxAudioMixer.SetFloat("SFXVolume", volume);
+    }
+
 
     public void SetFullscreen(bool isFullscreen)
     {

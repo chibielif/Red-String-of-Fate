@@ -444,7 +444,19 @@ MonoBehaviour:
       m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 544810865}
+        m_TargetAssemblyTypeName: SettingsManager, Assembly-CSharp
+        m_MethodName: SetResolution
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_AlphaFadeSpeed: 0.15
 --- !u!114 &159843381
 MonoBehaviour:
@@ -1544,7 +1556,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SettingsManager
   musicAudioMixer: {fileID: 24100000, guid: 4a73dabed1073e74eaee5bcb24b56936, type: 2}
-  SFXAudioMixer: {fileID: 24100000, guid: b08ce77a6e8cace4fbae994a144f048a, type: 2}
+  sfxAudioMixer: {fileID: 24100000, guid: b08ce77a6e8cace4fbae994a144f048a, type: 2}
+  resolutionDropdown: {fileID: 159843380}
 --- !u!4 &544810866
 Transform:
   m_ObjectHideFlags: 0
@@ -2240,7 +2253,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7057492522600120447, guid: 06842cd02676ff24dabd7fb0f7e57c78, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetSFXVolume
+      value: SetSfxVolume
       objectReference: {fileID: 0}
     - target: {fileID: 7057492522600120447, guid: 06842cd02676ff24dabd7fb0f7e57c78, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -3285,18 +3298,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6217951383859432622, guid: a7ae866969f46f847aa00f4d360de2ab, type: 3}
-      propertyPath: sounds.Array.data[0].audioMixerGroup
-      value: 
-      objectReference: {fileID: 24300002, guid: b08ce77a6e8cace4fbae994a144f048a, type: 2}
-    - target: {fileID: 6217951383859432622, guid: a7ae866969f46f847aa00f4d360de2ab, type: 3}
-      propertyPath: sounds.Array.data[1].audioMixerGroup
-      value: 
-      objectReference: {fileID: 24300002, guid: b08ce77a6e8cace4fbae994a144f048a, type: 2}
-    - target: {fileID: 6217951383859432622, guid: a7ae866969f46f847aa00f4d360de2ab, type: 3}
-      propertyPath: sounds.Array.data[2].audioMixerGroup
-      value: 
-      objectReference: {fileID: 24300002, guid: 4a73dabed1073e74eaee5bcb24b56936, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
