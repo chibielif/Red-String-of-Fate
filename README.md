@@ -13,11 +13,11 @@ Made from scratch in **72 hours** for **Mağara Jam '25**. Every part of the gam
 - **Follow the string.** A red thread connects you to your fated person and visibly renders between you as you move through the world.
 - **Watch it fade.** Every time you pass through a gate into a new area, the string loses visibility. Let it run out and it disappears entirely.
 
-https://github.com/user-attachments/assets/ec0917af-dffb-4642-a661-ae720d28bdbf
+https://github.com/user-attachments/assets/8387d6c6-7102-4750-97fd-90f9f128305f
 
 - **Refill it with tangram puzzles.** Certain points along the way open a tangram mini-game — solve it to restore the string to full visibility and keep going.
 
-https://github.com/user-attachments/assets/77cf6f7b-202b-4870-8569-9713405063af
+https://github.com/user-attachments/assets/e7bf737f-4512-4ba0-9a32-6a081a39b744
 
 - **Reach the end.** The story unfolds across a sequence of hand-crafted scenes as you make your way toward reuniting the two ends of the string.
 
