@@ -4,6 +4,8 @@
 
 A narrative 2D puzzle-platformer built in Unity. You're tethered to someone by a literal red string of fate — but the string fades the further you travel, and you'll need to solve tangram puzzles along the way to keep your connection alive.
 
+Made from scratch in **72 hours** for **Mağara Jam '25**. Every part of the game — code, art, writing, design — is my own original work, built during the jam with no ready-made assets, aside from the music. It's the first game I've ever made entirely by myself.
+
 **[Download it on itch.io](https://chibielif.itch.io/red-string-of-fate)**
 
 ## Gameplay
@@ -20,29 +22,11 @@ A narrative 2D puzzle-platformer built in Unity. You're tethered to someone by a
 | Move | WASD / Arrow keys (or gamepad stick) |
 | Interact / solve tangram | Mouse |
 
-## Built with
-
-- **Engine:** Unity 6000.3.6f1
-- **Render pipeline:** Universal Render Pipeline (URP)
-- **Input:** Unity Input System
-- **UI/Text:** TextMesh Pro
-
 ## Running it locally
 
 1. Clone the repo.
 2. Open the project folder with Unity Hub (Unity **6000.3.6f1** or compatible).
 3. Open `Assets/Scenes/Main Menu.unity` and hit Play.
-
-## Project structure
-
-```
-Assets/
-  Scenes/        Main Menu, Settings, and the sequential story scenes (Scene1 → Scene28)
-  Scripts/        Core gameplay: player movement, the red string renderer, gates,
-                   love-refill triggers, game/menu managers, and the Tangram mini-game
-  Sprites/        Art
-  Sounds/         Music and SFX (routed through separate Music/SFX audio mixers)
-```
 
 ## Credits
 
