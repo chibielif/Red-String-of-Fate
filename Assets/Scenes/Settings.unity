@@ -1558,6 +1558,8 @@ MonoBehaviour:
   musicAudioMixer: {fileID: 24100000, guid: 4a73dabed1073e74eaee5bcb24b56936, type: 2}
   sfxAudioMixer: {fileID: 24100000, guid: b08ce77a6e8cace4fbae994a144f048a, type: 2}
   resolutionDropdown: {fileID: 159843380}
+  musicSlider: {fileID: 900000002}
+  sfxSlider: {fileID: 900000001}
 --- !u!4 &544810866
 Transform:
   m_ObjectHideFlags: 0
@@ -2276,6 +2278,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06842cd02676ff24dabd7fb0f7e57c78, type: 3}
+--- !u!114 &900000001 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7057492522600120447, guid: 06842cd02676ff24dabd7fb0f7e57c78, type: 3}
+  m_PrefabInstance: {fileID: 817066825}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Slider
 --- !u!1 &861570277
 GameObject:
   m_ObjectHideFlags: 0
@@ -3596,6 +3609,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06842cd02676ff24dabd7fb0f7e57c78, type: 3}
+--- !u!114 &900000002 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7057492522600120447, guid: 06842cd02676ff24dabd7fb0f7e57c78, type: 3}
+  m_PrefabInstance: {fileID: 5173316480397313968}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Slider
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

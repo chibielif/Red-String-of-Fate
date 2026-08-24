@@ -12,14 +12,26 @@ public class SettingsManager : MonoBehaviour
     public AudioMixer sfxAudioMixer;
     
     public TMP_Dropdown resolutionDropdown;
-    
-    
+
+    public Slider musicSlider;
+    public Slider sfxSlider;
+
     Resolution[] resolutions;
 
     private void Start()
     {
+        if (musicSlider != null && musicAudioMixer.GetFloat("MusicVolume", out float musicVolume))
+        {
+            musicSlider.value = musicVolume;
+        }
+
+        if (sfxSlider != null && sfxAudioMixer.GetFloat("SFXVolume", out float sfxVolume))
+        {
+            sfxSlider.value = sfxVolume;
+        }
+
         resolutions = Screen.resolutions;
-        
+
         resolutionDropdown.ClearOptions();
         
         List<string> options = new List<string>();
