@@ -73,3 +73,24 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# Rider/IDE project files
+/.idea/
+
+# Local build outputs and archives (not source, don't belong in the repo)
+/build2/
+/build2.zip
+/build3/
+/build3.zip
+/RedStringOfFate_v1_1/
+/RedStringOfFate_v1_2/
+/RedStringOfFate_v1_2.zip
+*.zip
+!/Assets/**/*.zip
+
+# Raw downloaded font-store packages (the actual fonts are imported under Assets/Fonts)
+/dark_shadow_font/
+/melon_fruit_font/
+
+# Local screenshots folder (not part of the project)
+/ekran görüntüleri/
