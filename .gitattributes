@@ -1,2 +1,8 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Exclude vendored/imported package assets from GitHub's language stats
+# (TextMesh Pro ships large .shadergraph files that otherwise dwarf the
+# actual C# gameplay code in byte count).
+Assets/TextMesh?Pro/** linguist-vendored
+Packages/** linguist-vendored
