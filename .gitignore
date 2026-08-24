@@ -94,3 +94,8 @@ crashlytics-build.properties
 
 # Local screenshots folder (not part of the project)
 /ekran görüntüleri/
+
+# Local exported build and README media source material (screenshots/GIFs
+# get uploaded straight to GitHub instead of committed as repo files)
+/portfolio_build/
+/ss and videos/
